@@ -5,17 +5,17 @@
 import numpy as np
 
 def task1(matrix):
-    '''i,j= np.shape(matrix)
+    i,j= np.shape(matrix)
     for k in range(i):
         for l in range(j):
             if k>l:
-                matrix[k][l]=0'''
+                matrix[k][l]=0
     
     upper=np.triu(matrix)
     return np.transpose(upper)
 
 def task2(matrix):
-    '''return mean, median, std (precision 2), all along x, determinant, inverse, pseudo-inverse'''
+    return mean, median, std (precision 2), all along x, determinant, inverse, pseudo-inverse
     mean = np.mean(matrix,axis=0)
     median = np.median(matrix,axis=0,overwrite_input=False,keepdims=False,out=None)
     std = np.std(matrix,axis=0)
@@ -46,16 +46,16 @@ if __name__ == '__main__':
     # Uncomment the following lines to test your code
 
     # TASK 1
-    #print(task1(matrix))
+    print(task1(matrix))
 
     # TASK 2
-    #mean, median, std, det, inv, pseudoinv = task2(matrix)
-    #print("Mean: ", mean)
-    #print("Median: ", median)
-    #print("Standard Deviation: ", std)
-    #print("Determinant: ", det)
-    #print("Inverse: ", inv)
-    #print("Pseudo-Inverse: ", pseudoinv)
+    mean, median, std, det, inv, pseudoinv = task2(matrix)
+    print("Mean: ", mean)
+    print("Median: ", median)
+    print("Standard Deviation: ", std)
+    print("Determinant: ", det)
+    print("Inverse: ", inv)
+    print("Pseudo-Inverse: ", pseudoinv)
 
     # TASK 3
-    #print(task3(matrix)) # default padding
+    print(task3(matrix)) # default padding
