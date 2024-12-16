@@ -15,7 +15,7 @@ def task1(matrix):
     return np.transpose(upper)
 
 def task2(matrix):
-    return mean, median, std (precision 2), all along x, determinant, inverse, pseudo-inverse
+    # return mean, median, std (precision 2), all along x, determinant, inverse, pseudo-inverse
     mean = np.mean(matrix,axis=0)
     median = np.median(matrix,axis=0,overwrite_input=False,keepdims=False,out=None)
     std = np.std(matrix,axis=0)
